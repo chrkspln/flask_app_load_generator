@@ -4,12 +4,11 @@ import aiohttp
 import random
 import time
 
-# Environment variables
+# environment variables
 TARGET_URL = os.getenv("TARGET_URL", "http://51.21.255.185:5000")
 REQUESTS_PER_SECOND = int(os.getenv("REQUESTS_PER_SECOND", "20"))
 DURATION_SEC = int(os.getenv("DURATION_SEC", "60"))
 
-# Available routes (ID range 1–10)
 ROUTES = [
     "/delivery",
     "/price",
